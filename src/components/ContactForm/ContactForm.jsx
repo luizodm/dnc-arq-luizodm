@@ -103,10 +103,9 @@ function ContactForm() {
                 <div className="d-flex form-group al-center jc-end">
                     {formSubmitted && <p className="text-primary">{appContext.languages[appContext.language].contact.sucessMsg}</p>}
                     <Button type="submit" buttonStyle="secondary" disabled={!isFormValid || formSubmitLoading}>
-                        {appContext.languages[appContext.language].general.send.sucessMsg}
+                        {appContext.languages[appContext.language].general.send}
                     </Button>
                 </div>
-
             </form>
         </div>
     )
